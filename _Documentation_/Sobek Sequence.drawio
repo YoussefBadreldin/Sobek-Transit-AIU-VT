@@ -1,0 +1,182 @@
+<mxfile host="app.diagrams.net" modified="2023-11-08T00:15:25.228Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="jkG3yIJDfaY-5rHAFtY8" version="22.0.8" type="device">
+  <diagram name="Page-1" id="Oh_RGBqsiX5Njv5jgp1H">
+    <mxGraphModel dx="1002" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0PIH029gW8xknLnUkCBi-1" value="User" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="150" height="1396" as="geometry" />
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-2" value="WebApplication" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="375" y="20" width="150" height="1396" as="geometry" />
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-3" value="GoogleOAuth" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="648" y="20" width="150" height="1396" as="geometry" />
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-4" value="Database" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="937" y="20" width="150" height="1396" as="geometry" />
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-5" value="PaymentGateway" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};size=65;" vertex="1" parent="1">
+          <mxGeometry x="1137" y="20" width="150" height="1396" as="geometry" />
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-6" value="Accesses online transit system" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-1" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="129" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-7" value="Initiates login process" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="597" y="183" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-8" value="Returns authentication result" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-3" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="597" y="285" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-9" value="Validates login credentials" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="741" y="339" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-10" value="Returns login confirmation" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-4" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="739" y="393" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-11" value="Confirms login and session" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="447" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-12" value="Selects departure and destination points" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-1" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="501" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-13" value="Retrieves available buses" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="739" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-14" value="Returns list of buses" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-4" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="739" y="609" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-15" value="Displays list of buses" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="663" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-16" value="Chooses specific bus" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-1" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="717" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-17" value="Reserves bus seat" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="739" y="771" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-18" value="Confirms seat reservation" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-4" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="739" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-19" value="Confirms seat reservation" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="879" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-20" value="Proceeds to payment" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="933" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-21" value="Provides payment details" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-1" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="987" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-22" value="Initiates payment process" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841" y="1041" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-23" value="Returns payment confirmation" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-5" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="841" y="1095" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-24" value="Confirms successful payment" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="1149" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-25" value="Generates ticket" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="1203" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-26" value="Receives ticket" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-1" target="0PIH029gW8xknLnUkCBi-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="1257" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-27" value="Displays ticket details" style="verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;dashPattern=2 3;" edge="1" parent="1" source="0PIH029gW8xknLnUkCBi-2" target="0PIH029gW8xknLnUkCBi-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="283" y="1311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0PIH029gW8xknLnUkCBi-28" value="Performs OAuth authentication" style="fillColor=#ffff88;strokeColor=#9E916F;" vertex="1" parent="1">
+          <mxGeometry x="748" y="203" width="239" height="48" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
